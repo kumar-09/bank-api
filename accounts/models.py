@@ -15,3 +15,7 @@ class Account(models.Model):
     email = models.EmailField(max_length=200)
     gender = models.CharField(max_length=20, choices=Gender.choices)
     accountType = models.CharField(max_length=20, choices=Account.choices)
+    profile_image = models.ImageField(upload_to='account_images/', null=True, blank=True)
+
+    # def __str__(self):
+    #     return f"{self.name}({self.accountNo})"
