@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-from rest_framework.permissions import AllowAny
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,7 +28,6 @@ DEBUG = True
 # APPEND_SLASH = False
 ALLOWED_HOSTS = []
 
-print("base dir path", BASE_DIR)
 # Application definition
 
 INSTALLED_APPS = [
@@ -138,5 +136,3 @@ MEDIA_URL = "/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
